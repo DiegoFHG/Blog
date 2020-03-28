@@ -39,6 +39,9 @@ body
 	font-family 'Roboto', sans-serif
 	margin 0
 
+html
+	scroll-padding-top 60px
+
 main
 	padding-top 5%
 	padding-bottom 5%
