@@ -9,7 +9,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: build
+  local_dir: .vuepress/dist
   github_token: $GH_TOKEN
   on:
     branch: master
