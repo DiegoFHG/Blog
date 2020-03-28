@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Personal blog.",
+  "dependencies": {
+    "vue-material-design-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.0",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "vue-prism": "^1.0.5",
+    "vuepress": "^1.4.0",
+    "vuepress-plugin-container": "^2.1.2"
+  },
+  "scripts": {
+		"dev": "vuepress dev",
+		"build": "vuepress build"
+  },
+  "author": "Diego Francisco",
+  "license": "MIT"
+}
