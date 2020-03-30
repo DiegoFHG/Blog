@@ -32,12 +32,14 @@ export default {
 	border 1px #eaecef solid
 	border-radius 3px
 	margin-bottom 20px
-	box-shadow 1px 2px 3px #eaecef
+	box-shadow rgba(184, 194, 215, 0.25) 0px 4px 6px, rgba(184, 194, 215, 0.1) 0px 5px 7px;
 	padding 10px
+	background-color white
 
 .post-card-title
 	font-weight 600
 	margin 10px
+	color #2E3440
 
 	&:hover
 		color #5E81AC

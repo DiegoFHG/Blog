@@ -22,17 +22,21 @@ export default {
 
 <style lang="stylus">
 .topbar
+	z-index 10
 	border-bottom 1px #eaecef solid
 	padding 0
 	position fixed
 	width 100%
 	background-color white
+	color #4C566A
 	display flex
 	justify-content space-between
+	box-shadow rgba(184, 194, 215, 0.25) 0px 4px 6px, rgba(184, 194, 215, 0.1) 0px 5px 7px
 
 .topbar-title
 	margin 10px
 	font-weight: 400
+	color #2E3440
 
 	&:hover
 		color #5E81AC
@@ -48,4 +52,5 @@ export default {
 
 .github-link
 	display flex
+	color #2E3440
 </style>

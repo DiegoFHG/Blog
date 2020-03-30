@@ -1,5 +1,5 @@
 import VuePrism from 'vue-prism';
-import 'prismjs/themes/prism-tomorrow.css'
+import './theme/prism/prism-nord.css'
 import 'vue-material-design-icons/styles.css';
 
 export default ({

@@ -2,9 +2,14 @@
 	<div>
 		<TopBar />
 		<main>
-			<Content />
+			<div v-if="$page.title" class="content-post">
+				<Content />
+			</div>
 			<div v-if="!$page.title">
 				<h1>Posts</h1>
+				<div v-if="$site.pages.length === 1">
+					<h2>No posts</h2>
+				</div>
 				<template v-for="post in $site.pages">
 					<PostCard
 						v-if="post.title"
@@ -38,6 +43,8 @@ export default {
 body
 	font-family 'Roboto', sans-serif
 	margin 0
+	background-color #ECEFF4
+	color #2E3440
 
 html
 	scroll-padding-top 60px
@@ -132,6 +139,15 @@ blockquote
 	color #5E81AC !important
 
 .go-to-top:hover {
-  color: lighten(#5E81AC, 30%) !important;
+  color: lighten(#5E81AC, 30%) !important
 }
+
+.content-post
+	box-shadow rgba(184, 194, 215, 0.25) 0px 4px 6px, rgba(184, 194, 215, 0.1) 0px 5px 7px
+	background-color white
+	padding-left 4em
+	padding-right 4em
+	padding-top 0.3em
+	padding-bottom 1.5em
+	border-radius 3px
 </style>
