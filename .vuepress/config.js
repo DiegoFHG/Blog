@@ -12,6 +12,9 @@ module.exports = {
 		[
 			'@vuepress/blog',
 			{
+				sitemap: {
+					hostname: 'https://diegofhg.com',
+				},
 				directories: [
 					{
 						id: 'posts',
