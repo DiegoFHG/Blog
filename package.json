@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "description": "Personal blog.",
   "dependencies": {
-    "vue-material-design-icons": "^4.4.0"
+    "vue-material-design-icons": "^4.4.0",
+    "vuepress-plugin-reading-progress": "^1.0.9"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
     "@vuepress/plugin-blog": "^1.9.2",
     "vue-prism": "^1.0.5",
     "vuepress": "^1.4.0",
-    "vuepress-plugin-container": "^2.1.2"
+    "vuepress-plugin-container": "^2.1.2",
+    "vuepress-plugin-reading-time": "^0.1.1",
+    "vuepress-plugin-seo": "^0.1.2"
   },
   "scripts": {
-		"dev": "vuepress dev",
-		"build": "vuepress build"
+    "dev": "vuepress dev",
+    "build": "vuepress build"
   },
   "author": "Diego Francisco",
   "license": "MIT"

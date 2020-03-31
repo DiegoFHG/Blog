@@ -7,8 +7,20 @@ module.exports = {
 		['link', { rel: 'manifest', href: '/manifest.json' }],
 		['meta', { name: "msapplication-config", content: "/browserconfig.xml"}],
 	],
+	themeConfig: {
+		author: 'DiegoFHG',
+		domain: 'https://diegofhg.com'
+	},
 	plugins: [
 		['@vuepress/back-to-top'],
+		[
+			'reading-progress',
+			{
+				readingDir: '_posts',
+			},
+		],
+		['seo'],
+		['vuepress-plugin-reading-time'],
 		[
 			'@vuepress/blog',
 			{
