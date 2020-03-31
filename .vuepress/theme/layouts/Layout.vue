@@ -10,7 +10,6 @@
 				<div v-if="$site.pages.length === 1">
 					<h2>No posts</h2>
 				</div>
-				{{$pagination.pages}}
 				<template v-for="post in $site.pages">
 					<PostCard
 						v-if="post.title"
