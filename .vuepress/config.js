@@ -15,11 +15,23 @@ module.exports = {
 				sitemap: {
 					hostname: 'https://diegofhg.com',
 				},
+				frontmatters: [
+					{
+						id: 'tag',
+						keys: ['tag'],
+						path: '/tag/',
+						layout: 'Tags',
+						scopeLayout: 'Tag'
+					},
+				],
 				directories: [
 					{
 						id: 'posts',
 						dirname: '_posts',
 						path: '/',
+						pagination: {
+							lengthPerPage: 10,
+						},
 					},
 				],
 			},
